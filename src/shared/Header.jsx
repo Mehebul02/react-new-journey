@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { logo } from "../assets/images";
 import Container from "./Container";
 
@@ -19,12 +20,13 @@ const navigation = [
         </div>
         {/* menu ber  */}
         <div>
-          <ul className="flex items-center gap-6">
+          <ul className="flex items-center gap-6 font-semibold cursor-pointer">
             <li>Home</li>
+            <li>Career</li>
             <li>Contact</li>
             <li>About Us</li>
-            <li>Home</li>
-            <li>Home</li>
+            <li>Blog</li>
+      
           </ul>
         </div>
       </div>
