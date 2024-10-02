@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+
 import { logo } from "../assets/images";
 import Container from "./Container";
-
+import { Link } from "react-router-dom";
 const Header = () => {
 const navigation = [
     {title:'Home', link:'/'},
@@ -11,13 +11,14 @@ const navigation = [
 ]
 
   return (
-    <Container className="mt-6">
+   <div className="bg-green-700">
+     <Container className="">
       {/* main container  */}
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         {/* logo */}
-        <div>
-          <img src={logo} alt="logo" className="w-10" />
-        </div>
+        <Link to='/'>
+          <img src={logo} alt="logo" className="w-16" />
+        </Link>
         {/* menu ber  */}
         <div>
           <ul className="flex items-center gap-6 font-semibold cursor-pointer">
@@ -32,6 +33,7 @@ const navigation = [
       </div>
       <div></div>
     </Container>
+   </div>
   );
 };
 
