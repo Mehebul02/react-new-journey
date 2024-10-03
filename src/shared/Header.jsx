@@ -9,7 +9,7 @@ const navigation = [
     {title:'Contact US', link:'/contact'},
     {title:'Blog', link:'/blog'},
 ]
-
+console.log(navigation)
   return (
    <div className="bg-green-700">
      <Container className="">
@@ -23,11 +23,12 @@ const navigation = [
         <div>
           <ul className="flex items-center gap-6 font-semibold cursor-pointer">
            {
-            navigation.map((item)=>{
-              <li>{item.title}</li>
-            })
+            navigation.map((item)=>(
+              <li key={item.title} className="text-md text-white">{item.title}</li>
+            ))
            }
       
+          <button className="text-md text-black font-medium bg-yellow-400 px-4 py-2 rounded-lg ">Contact</button>
           </ul>
         </div>
       </div>
