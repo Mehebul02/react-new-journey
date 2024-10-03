@@ -22,11 +22,11 @@ const navigation = [
         {/* menu ber  */}
         <div>
           <ul className="flex items-center gap-6 font-semibold cursor-pointer">
-            <li>Home</li>
-            <li>Career</li>
-            <li>Contact</li>
-            <li>About Us</li>
-            <li>Blog</li>
+           {
+            navigation.map((item)=>{
+              <li>{item.title}</li>
+            })
+           }
       
           </ul>
         </div>
